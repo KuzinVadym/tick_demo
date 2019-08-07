@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     initCells1();
     initCells2();
-    var timerId = setInterval(function() {
+    setInterval(function() {
       tick1();
       tick2();
     }, 1000);

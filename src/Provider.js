@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Context from './context';
-import Cell from './Cell';
+import SimpleCell from './SimpleCell';
 
 function create2d1() {
     let a = [];
@@ -37,7 +37,7 @@ function createEnv(array, depth, width ) {
     for (let i = 0; i < depth; i++) {
         cells.push([]);
         for (let j = 0; j < width; j++) {
-            let cell = new Cell(array[i][j], i, j);
+            let cell = SimpleCell(array[i][j], i, j);
             cells[i].push(cell);
         }
     }
